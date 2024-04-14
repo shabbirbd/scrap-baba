@@ -23,14 +23,14 @@ const HeroCarousel = () => {
         showArrows={false}
         showStatus={false}
       >
-        {heroImages.map((image) => (
+        {heroImages.map((image, i) => (
           <Image
             src={image.imgUrl}
             alt={image.alt}
             width={484}
             height={484}
             className="object-contain"
-            key={image.alt}
+            key={i}
           />
         ))}
       </Carousel>
